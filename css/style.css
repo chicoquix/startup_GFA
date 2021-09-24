@@ -28,7 +28,7 @@ body {
 }
 
 .links li {
-  margin: 20px;
+  margin: 10px;
 }
 
 .links__itens a {
@@ -38,6 +38,8 @@ body {
 
 .links__itens a:hover {
   color: rgb(100, 130, 248);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(100, 130, 248);
 }
 
 .backimage {
@@ -78,6 +80,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 15px;
+  justify-content: center;
 }
 
 .empresa__title img {
@@ -149,8 +152,6 @@ body {
 }
 
 .segmento__text:hover{
-  border-radius: 5px;
-  background-color: rgba(151, 172, 255, 0.515);
   font-weight: 900;
 }
 
@@ -164,3 +165,73 @@ body {
   padding: 20px;
   background-color: rgba(151, 172, 255, 0.515);
 }
+
+.educacional{
+  border-top: 1px solid rgb(100, 130, 248);
+  padding-top: 30px;
+  margin: 50px;
+}
+
+.educacional__text{
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.educacional__text p{
+  width: 500px;
+}
+
+.educacional__text img{
+  width: 30%;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(151, 172, 255, 0.515);
+}
+
+.backimage__new{
+  background-image: url(../images/programmation.jpg);   
+}
+
+.startup{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding-bottom: 30px;
+  margin: 50px;
+
+}
+
+.finep__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  justify-content: center;
+}
+
+.finep__title img {
+  width: 250px;
+  padding: 20px;
+}
+
+.finep__title h1{
+ margin-right: 25px;
+}
+
+.finep__text{
+  width: 70%;
+  line-height: 25px;
+  text-align: center;
+  border-bottom: 1px solid rgb(100, 130, 248);
+  padding-bottom: 50px;
+}
+
