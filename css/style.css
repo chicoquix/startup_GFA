@@ -12,8 +12,7 @@ body {
 }
 
 .menu {
- 
-  width: 100%;
+  width: 100vw;
   height: 80px;
   display: flex;
   align-items: center;
@@ -234,5 +233,41 @@ body {
   text-align: center;
   border-bottom: 1px solid rgb(100, 130, 248);
   padding-bottom: 50px;
+}
+
+.rodape{
+  width: 100%;
+  background-color: rgba(10, 14, 46, 0.974);
+  color: rgb(151, 172, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.rodape__info{
+  width: 90%;
+}
+
+.rodape__info h1{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.rodape__info h3{
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.rodape__info li {
+  list-style: none;
+}
+
+.info__copy{
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid rgb(100, 130, 248);
+  padding-top: 20px;
 }
 
