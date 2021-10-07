@@ -55,12 +55,12 @@ body {
 }
 
 
-.backimage:nth-child(2){
+.backimage:nth-child(2) {
   background-image: url(../images/tecnoFundo.jpg);
 }
 
-.backimage h1, h2 {
-  /* border: solid 1px rgb(151, 172, 255); */
+.backimage h1,
+h2 {
   padding: 10px;
   background-color: rgba(151, 172, 255, 0.515);
   border-radius: 25px 10px;
@@ -88,20 +88,20 @@ body {
   padding: 20px;
 }
 
-.empresa__text{
+.empresa__text {
   width: 70%;
   line-height: 25px;
   text-align: center;
 }
 
-.empresa__card{
+.empresa__card {
   width: 100%;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   margin-top: 40px;
 }
 
-.card{
+.card {
   width: 20vw;
   /* border: 1px solid #000; */
   display: flex;
@@ -121,12 +121,12 @@ body {
   width: 130px;
 }
 
-.card:hover{
+.card:hover {
   /* width: 23vw; */
   font-weight: 900;
 }
 
-.segmento{
+.segmento {
   width: 100%;
   align-items: center;
   display: flex;
@@ -134,7 +134,7 @@ body {
   justify-content: center;
 }
 
-.segmento__text{
+.segmento__text {
   /* border: 1px solid #000; */
   width: 80%;
   margin: 20px 0;
@@ -151,11 +151,11 @@ body {
   text-align: center;
 }
 
-.segmento__text:hover{
+.segmento__text:hover {
   font-weight: 900;
 }
 
-.segmento__text:nth-child(2){
+.segmento__text:nth-child(2) {
   flex-direction: row-reverse;
 }
 
@@ -166,13 +166,13 @@ body {
   background-color: rgba(151, 172, 255, 0.515);
 }
 
-.educacional{
+.educacional {
   border-top: 1px solid rgb(100, 130, 248);
   padding-top: 30px;
   margin: 50px;
 }
 
-.educacional__text{
+.educacional__text {
   margin-top: 60px;
   width: 100%;
   display: flex;
@@ -182,28 +182,28 @@ body {
   text-align: center;
 }
 
-.educacional__text p{
-  width: 500px;
+.educacional__text p {
+  width: 100%;
 }
 
-.educacional__text img{
+.educacional__text img {
   width: 30%;
   margin: 15px;
   padding: 20px;
   background-color: rgba(151, 172, 255, 0.515);
 }
 
-.backimage__new{
-  background-image: url(../images/programmation.jpg);   
+.backimage__new {
+  background-image: url(../images/programmation.jpg);
 }
 
-.startup{
+.startup {
   width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  
+
   padding-bottom: 30px;
   margin: 50px;
 
@@ -223,11 +223,11 @@ body {
   padding: 20px;
 }
 
-.finep__title h1{
- margin-right: 25px;
+.finep__title h1 {
+  margin-right: 25px;
 }
 
-.finep__text{
+.finep__text {
   width: 70%;
   line-height: 25px;
   text-align: center;
@@ -235,7 +235,7 @@ body {
   padding-bottom: 50px;
 }
 
-.rodape{
+.rodape {
   width: 100%;
   background-color: rgba(10, 14, 46, 0.974);
   color: rgb(151, 172, 255);
@@ -243,17 +243,17 @@ body {
   justify-content: center;
 }
 
-.rodape__info{
+.rodape__info {
   width: 90%;
 }
 
-.rodape__info h1{
+.rodape__info h1 {
   width: 100%;
   text-align: center;
   margin-top: 10px;
 }
 
-.rodape__info h3{
+.rodape__info h3 {
   margin-left: 15px;
   padding: 10px;
 }
@@ -262,7 +262,7 @@ body {
   list-style: none;
 }
 
-.info__copy{
+.info__copy {
   width: 100%;
   margin: 20px;
   text-align: center;
@@ -271,3 +271,112 @@ body {
   padding-top: 20px;
 }
 
+@media screen and (max-width:1000px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .menu {
+    font-size: 15px;
+  }
+
+  .links li {
+    margin: 7px;
+    font-size: 12px;
+  }
+
+  .segmento {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .segmento__text {
+    margin: 10px;
+    font-size: 15px;
+
+  }
+
+  .segmento__text img {
+    display: none;
+  }
+
+  .empresa__card {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90vw;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .menu {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .backimage {
+    width: 100vw;
+    background-image: url(../images/mao_robot.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+  }
+
+  .backimage {
+    height: 150px;
+  }
+
+  .backimage h1,
+  h2 {
+    font-size: 20px;
+  }
+
+  .educacional {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .educacional__text img {
+    display: none;
+  }
+
+  .educacional__text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .empresa__title {
+    font-size: 15px;
+  }
+
+  .finep__title {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .finep__title img {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .startup {
+    width: 80vw;
+  }
+
+}
